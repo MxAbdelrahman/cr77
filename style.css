@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu&display=swap');
+*{
+    font-family: "Ubuntu", sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    background-image: linear-gradient(#000,#111);
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+body::after{
+content:'' ;
+background-color: red;
+width: 100%;
+height: 100%;
+position: absolute;
+clip-path: circle(40% at right 70%);
+z-index:-1;
+animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+}
+
+@keyframes x{
+    0%{
+translate: 200px 80px;
+background-color: transparent;
+    }
+}
+
+.contenar{
+    height: 80%;
+    width: 80%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 19px;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul a:hover{
+    color:#e80202;
+    }
+    
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 0px 0px 12px white;
+}
+.pio {
+color: white;
+display: flex;
+flex-direction:column ;
+justify-content: center;
+height: 70%;
+margin-left:50px ;
+text-shadow: 0px 0px 12px white;
+}
+.pio h1{
+    font-size: 50px;
+}
+.pio p{
+    font-size: 30px;
+    width: 15%;
+    flex-wrap: wrap;
+}
+.cr7 {
+    position: fixed;
+    top: 150px;
+    left: 800px;
+}
+@media (min-width:500px) and (max-width:600px){
+    nav {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+       
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .pio{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    .pio p{
+        display: flex;
+        font-size: 20px;
+        width: 30%;
+
+    }
+    .pio h1{
+        font-size: 40px;
+    }
+    .cr7 {
+        position: fixed;
+        left: 125px;
+    }
+    body::after{
+        content:'' ;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(37% at bottom);
+        z-index:-1;
+        animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+        }
+        @keyframes x{
+            0%{
+        translate: 0 100px;
+        background-color: transparent;
+            }
+        }
+        .contenar {
+            box-shadow: 0px 0px 20px 3px white;
+        }
+}
+@media (min-width:601px) and (max-width:780px){
+    nav {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+       
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .pio{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    .pio p{
+        display: flex;
+        font-size: 30px;
+        width: 25%;
+
+    }
+    .pio h1{
+        font-size: 45px;
+    }
+    .cr7 {
+        position: fixed;
+        left: 30%;
+       
+        
+    }
+    body::after{
+        content:'' ;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(50% at right 75%);
+        z-index:-1;
+        animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+        }
+        @keyframes x{
+            0%{
+        translate: 150px 80px;
+        background-color: transparent;
+            }
+        }
+        .contenar {
+            box-shadow: 0px 0px 20px 3px white;
+        }
+}
+@media (min-width:781px) and (max-width:929px){
+    nav {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+       
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .pio{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    .pio p{
+        display: flex;
+        font-size: 30px;
+        width: 25%;
+
+    }
+    .pio h1{
+        font-size: 45px;
+    }
+    .cr7 {
+        position: fixed;
+        left: 40%;
+       
+        
+    }
+    body::after{
+        content:'' ;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(50% at right 75%);
+        z-index:-1;
+        animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+        }
+        @keyframes x{
+            0%{
+        translate: 150px 80px;
+        background-color: transparent;
+            }
+        }
+        .contenar {
+            box-shadow: 0px 0px 20px 3px white;
+        }
+}
+@media (min-width:930px) and (max-width:1200px){
+    nav {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+       
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .pio{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    .pio p{
+        display: flex;
+        font-size: 30px;
+        width: 25%;
+
+    }
+    .pio h1{
+        font-size: 45px;
+    }
+    .cr7 {
+        position: fixed;
+        left: 45%;
+       
+        
+    }
+    body::after{
+        content:'' ;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(50% at right 75%);
+        z-index:-1;
+        animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+        }
+        @keyframes x{
+            0%{
+        translate: 150px 80px;
+        background-color: transparent;
+            }
+        }
+        .contenar {
+            box-shadow: 0px 0px 20px 3px white;
+        }
+}
+@media (min-width:401px) and (max-width:499px){
+    nav {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+       
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .pio{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    .pio p{
+        display: flex;
+        font-size: 30px;
+        width: 35%;
+
+    }
+    .pio h1{
+        font-size: 45px;
+    }
+    .cr7 {
+        /* position: fixed;
+        left: 50%;
+        top: 300px; */
+       
+        
+    }
+    img{
+        /* display: flex; */
+        width: 300px;
+        height: 400px;
+        margin-left: -620px ;
+        margin-top: 100px;
+
+    }
+    body::after{
+        content:'' ;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(35% at bottom );
+        z-index:-1;
+        animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+        }
+        @keyframes x{
+            0%{
+        translate: 0px 150px;
+        background-color: transparent;
+            }
+        }
+        .contenar {
+            box-shadow: 0px 0px 20px 3px white;
+        }
+}
+@media (min-width:930px) and (max-width:1200px){
+    nav {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+       
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .pio{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    .pio p{
+        display: flex;
+        font-size: 30px;
+        width: 25%;
+
+    }
+    .pio h1{
+        font-size: 45px;
+    }
+    .cr7 {
+        position: fixed;
+        left: 45%;
+       
+        
+    }
+    body::after{
+        content:'' ;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(50% at right 75%);
+        z-index:-1;
+        animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+        }
+        @keyframes x{
+            0%{
+        translate: 150px 80px;
+        background-color: transparent;
+            }
+        }
+        .contenar {
+            box-shadow: 0px 0px 20px 3px white;
+        }
+}
+@media (min-width:100px) and (max-width:400px){
+    nav {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+       
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .pio{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    .pio p{
+        display: flex;
+        font-size: 20px;
+        width: 35%;
+
+    }
+    .pio h1{
+        font-size: 30px;
+    }
+    .cr7 {
+        /* position: fixed;
+        left: 50%;
+        top: 300px; */
+       
+        
+    }
+    img{
+        /* display: flex; */
+        width: 300px;
+        height: 400px;
+        margin-left: -700px ;
+        position: fixed;
+        top: 40%;
+
+    }
+    body::after{
+        content:'' ;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(35% at bottom );
+        z-index:-1;
+        animation-name: x;
+animation-duration: 2s;
+animation-delay: 0.4;
+        }
+        @keyframes x{
+            0%{
+        translate: 0px 150px;
+        background-color: transparent;
+            }
+        }
+        .contenar {
+            box-shadow: 0px 0px 20px 3px white;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
